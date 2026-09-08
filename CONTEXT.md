@@ -28,7 +28,7 @@
 - `2026-08-05` issue #11303 (InPlaceEditor blur) — pr-opened-green (fork PR #2)
 - `2026-08-05` self-found a11y (DataTable aria-sort) — pr-opened-green (fork PR #3)
 - `2026-08-26` audit gate sweep — pr-updated (fork PR #2 body)
-- `2026-09-09` trivial cleanup pass (typos + broken links) — pr-opened (fork PR #14)
+- `2026-09-08/09` trivial cleanup pass (typos + broken links) — pr-opened then pr-updated (fork PR #14, extended with story-file `occured` typos; CI green, mergeable clean)
 
 ## Mined gaps (discovered, not yet attempted)
 - `2026-09-08` trivial cleanup pass: typos (`occured` x6, `withing` x2, `explicitely` x1) + broken relative links missing `.md` (Breadcrumb x3, Inputs x1, Upgrade x1) + dead `./ColumnsButton.md` link in DataTable.md — status: attempted (pr-opened #14)
