@@ -975,7 +975,7 @@ const PostEdit = () => (
 );
 ```
 
-If you still need to access the *effective* source of an input inside an `<ArrayInput>`, for example to change the value programmatically using `setValue`, you will need to leverage the [`useSourceContext` hook](./ArrayInput#changing-an-items-value-programmatically).
+If you still need to access the *effective* source of an input inside an `<ArrayInput>`, for example to change the value programmatically using `setValue`, you will need to leverage the [`useSourceContext` hook](./ArrayInput.md#changing-an-items-value-programmatically).
 
 {% raw %}
 

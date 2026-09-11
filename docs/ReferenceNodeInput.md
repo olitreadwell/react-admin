@@ -72,7 +72,7 @@ const ProductEdit = () => (
 
 ## `children`
 
-`<ReferenceNodeInput>` accepts only one child, which is responsible for rendering the input. By default, it renders a simple `<TreeInput>` with no props. If you need to pass additional props to `<TreeInput>`, you will need to pass them explicitely:
+`<ReferenceNodeInput>` accepts only one child, which is responsible for rendering the input. By default, it renders a simple `<TreeInput>` with no props. If you need to pass additional props to `<TreeInput>`, you will need to pass them explicitly:
 
 ```tsx
 <ReferenceNodeInput source="category_id" reference="categories">
