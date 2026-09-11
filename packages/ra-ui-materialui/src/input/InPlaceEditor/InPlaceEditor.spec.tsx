@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 
-import { Basic } from './InPlaceEditor.stories';
+import { Basic, WithSiblingControl } from './InPlaceEditor.stories';
 
 describe('InPlaceEditor', () => {
     it('should render the field value on mount', async () => {
@@ -52,6 +52,39 @@ describe('InPlaceEditor', () => {
             value.click();
             await screen.findByLabelText('Save');
             await screen.findByLabelText('Cancel');
+        });
+    });
+    describe('blur', () => {
+        it('should save when focus moves to a control outside the editor', async () => {
+            render(<WithSiblingControl />);
+            const value = await screen.findByText('John Doe');
+            value.click();
+            const input = await screen.findByDisplayValue('John Doe');
+            fireEvent.change(input, { target: { value: 'Jane Doe' } });
+            const nextButton = screen.getByRole('button', { name: 'Next' });
+            fireEvent.blur(input, { relatedTarget: nextButton });
+            await screen.findByText('Jane Doe');
+        });
+        it('should cancel when focus moves to a control outside the editor and cancelOnBlur is set', async () => {
+            render(<WithSiblingControl cancelOnBlur />);
+            const value = await screen.findByText('John Doe');
+            value.click();
+            const input = await screen.findByDisplayValue('John Doe');
+            fireEvent.change(input, { target: { value: 'Jane Doe' } });
+            const nextButton = screen.getByRole('button', { name: 'Next' });
+            fireEvent.blur(input, { relatedTarget: nextButton });
+            await screen.findByText('John Doe');
+            expect(screen.queryByDisplayValue('Jane Doe')).toBeNull();
+        });
+        it('should keep editing when focus moves to a button inside the editor', async () => {
+            render(<Basic delay={0} showButtons />);
+            const value = await screen.findByText('John Doe');
+            value.click();
+            const input = await screen.findByDisplayValue('John Doe');
+            fireEvent.change(input, { target: { value: 'Jane Doe' } });
+            const saveButton = screen.getByLabelText('Save');
+            fireEvent.blur(input, { relatedTarget: saveButton });
+            expect(screen.getByDisplayValue('Jane Doe')).not.toBeNull();
         });
     });
 });
