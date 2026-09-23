@@ -1,5 +1,5 @@
 # marmelab/react-admin context
-> refreshed 2026-09-08 | upstream default: master @ c3f33a28b
+> refreshed 2026-09-24 | upstream default: master @ 6aeb9edc9
 
 ## Identity & policies
 - upstream: marmelab/react-admin, default branch `master`, primary language TypeScript, English-first (yes — all docs/UI in English)
@@ -29,6 +29,7 @@
 - `2026-08-05` self-found a11y (DataTable aria-sort) — pr-opened-green (fork PR #3)
 - `2026-08-26` audit gate sweep — pr-updated (fork PR #2 body)
 - `2026-09-08/09` trivial cleanup pass (typos + broken links) — pr-opened then pr-updated (fork PR #14, extended with story-file `occured` typos; CI green, mergeable clean)
+- `2026-09-24` trivial cleanup pass (12 doc typos, 10 files) — pr-opened (fork PR #17, doc-check/unit/typecheck/e2e green, mergeable clean)
 
 ## Mined gaps (discovered, not yet attempted)
 - `2026-09-08` trivial cleanup pass: typos (`occured` x6, `withing` x2, `explicitely` x1) + broken relative links missing `.md` (Breadcrumb x3, Inputs x1, Upgrade x1) + dead `./ColumnsButton.md` link in DataTable.md — status: attempted (pr-opened #14)
