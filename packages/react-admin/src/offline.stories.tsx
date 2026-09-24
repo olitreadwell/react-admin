@@ -246,7 +246,7 @@ const EmptyStockButton = () => {
             refresh();
         },
         onError: () => {
-            notify('An error occured while emptying the stock');
+            notify('An error occurred while emptying the stock');
         },
     });
     if (!record) return null;
