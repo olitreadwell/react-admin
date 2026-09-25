@@ -403,7 +403,7 @@ export const authProvider = {
         const query = window.location.search;
         if (query.includes('code=') && query.includes('state=')) {
             try {
-                // get an access token based on the query paramaters
+                // get an access token based on the query parameters
                 await Auth0Client.handleRedirectCallback();
                 return;
             } catch (error) {

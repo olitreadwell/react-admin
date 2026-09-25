@@ -59,7 +59,7 @@ export const ImportResourceDialog = (props: ImportResourceDialogProps) => {
                     }
                 })
                 .catch(() => {
-                    notify('An error occured while handling this CSV file');
+                    notify('An error occurred while handling this CSV file');
                 });
         }
     };

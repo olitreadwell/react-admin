@@ -322,7 +322,7 @@ export const ErrorAutocomplete = () => (
                         }),
                     getList: (_resource, params) =>
                         params.filter.q === 'lorem'
-                            ? Promise.reject(new Error('An error occured'))
+                            ? Promise.reject(new Error('An error occurred'))
                             : Promise.resolve({
                                   data: authors,
                                   total: authors.length,
@@ -401,7 +401,7 @@ export const ErrorSelectInput = () => (
                             ),
                         }),
                     getList: (_resource, _params) =>
-                        Promise.reject(new Error('An error occured')),
+                        Promise.reject(new Error('An error occurred')),
                 } as any
             }
             queryClient={
@@ -475,7 +475,7 @@ export const ErrorRadioButtonGroupInput = () => (
                             ),
                         }),
                     getList: (_resource, _params) =>
-                        Promise.reject(new Error('An error occured')),
+                        Promise.reject(new Error('An error occurred')),
                 } as any
             }
             queryClient={

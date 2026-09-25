@@ -640,7 +640,7 @@ And if you want to prefill the form with constant values, use the `defaultValues
 
 ## Save And Add Another
 
-When users need to create several records in a row, a good UX is to stay on the Create form after a successfull submission, and to empty that form to allow a new entry.
+When users need to create several records in a row, a good UX is to stay on the Create form after a successful submission, and to empty that form to allow a new entry.
 
 Setting the `<Create redirect={false}>` prop only solves part of the problem: the form still needs to be emptied. That's why the right implementation for this use case is to add a custom `<SaveButton>` in the form toolbar, making useof  the `mutationOptions` prop:
 
