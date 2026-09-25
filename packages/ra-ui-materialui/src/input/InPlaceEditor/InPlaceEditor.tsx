@@ -196,7 +196,13 @@ export const InPlaceEditor = <
     };
 
     const handleBlur = (event: React.FocusEvent) => {
-        if (event.relatedTarget) {
+        // Keep editing when focus moves to another element inside the editor
+        // (e.g. the Save and Cancel buttons). Only save or cancel when focus
+        // leaves the editor entirely.
+        if (
+            event.relatedTarget &&
+            event.currentTarget.contains(event.relatedTarget as Node)
+        ) {
             return;
         }
         if (cancelOnBlur) {
