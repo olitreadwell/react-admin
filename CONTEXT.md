@@ -1,5 +1,5 @@
 # marmelab/react-admin context
-> refreshed 2026-09-24 | upstream default: master @ 6aeb9edc9
+> refreshed 2026-10-01 | upstream default: master @ e699865d8f46bf6f6fbc9eb7c9570ec4dec79f5d
 
 ## Identity & policies
 - upstream: marmelab/react-admin, default branch `master`, primary language TypeScript, English-first (yes — all docs/UI in English)
@@ -29,9 +29,10 @@
 - `2026-08-05` self-found a11y (DataTable aria-sort) — pr-opened-green (fork PR #3)
 - `2026-08-26` audit gate sweep — pr-updated (fork PR #2 body)
 - `2026-09-08/09` trivial cleanup pass (typos + broken links) — pr-opened then pr-updated (fork PR #14, extended with story-file `occured` typos; CI green, mergeable clean)
-- `2026-09-24` trivial cleanup pass (12 doc typos, 10 files) — pr-opened (fork PR #17, doc-check/unit/typecheck/e2e green, mergeable clean)
+- `2026-09-24` trivial cleanup pass (12 doc typos, 10 files) — pr-opened, still OPEN (fork PR #17 `doc/fix-typos-in-documentation`, 21 files after follow-up fold-ins, body regenerated 2026-09-30). This is the live TYPO pass; do NOT re-fix any word it already covers.
 
 - `2026-09-25` issue #10478 (Date-typed values silently lost to strings in optimistic cache via `JSON.parse(JSON.stringify(...))` in create/update hooks) — dropped (duplicate). The exact fix — a `removeUndefined` helper preserving `Date`, wired into `useUpdate` + `useUpdateMany` (+ util/index export, regression spec) — is ALREADY CLAIMED by open upstream PR #11271 `fix: preserve Date values in optimistic updates` (author louzhedong, open since 2026-06-08, mergeable, only Vercel deploy-authorization checks failing). Live code still has the bug (issue #10478 unmerged), but the argo-cd #29148 rule = open PR means work is claimed: do NOT re-pick. `useCreate` shares the same JSON-round-trip root cause but is a derivative slice of the same claimed theme, not an independent gap — left untaken. Lesson: re-run the upstream dedupe search at pick time; the earlier scan missed #11271 because the `gh search prs --state all` flags errored (use `--state open`/`--state closed`, or a bare keyword query).
 
 ## Mined gaps (discovered, not yet attempted)
-- `2026-09-08` trivial cleanup pass: typos (`occured` x6, `withing` x2, `explicitely` x1) + broken relative links missing `.md` (Breadcrumb x3, Inputs x1, Upgrade x1) + dead `./ColumnsButton.md` link in DataTable.md — status: attempted (pr-opened #14)
+- `2026-09-08` trivial cleanup pass: typos (`occured` x6, `withing` x2, `explicitely` x1) + broken relative links missing `.md` (Breadcrumb x3, Inputs x1, Upgrade x1) + dead `./ColumnsButton.md` link in DataTable.md — status: attempted (pr-opened #14, folded into #17)
+- `2026-10-01` self-found BROKEN LINKS/ANCHORS (distinct theme from #17 typos): docs/useGetOne.md malformed link `](./DataTable.md],`; docs_headless Validation.md `../data-fetching/DataProviderWriting.html` (no such path); docs_headless InfiniteListBase.md `./Admin.md#accessdenied` (no Admin.md; siblings use CoreAdmin.md); docs_headless Form.md `#default-values` (heading slug is `#defaultvalues`); docs_headless CoreAdmin.md `#using-react-admin-in-a-sub-path` (heading is "Using Ra-Core In A Sub Path") and `#customizing-the-login-component` (headless heading is "Adding A Login Page"). Verified with a repo-wide relative-link + GitHub-slug anchor checker; none overlap #17's 21 files. — status: proposed
