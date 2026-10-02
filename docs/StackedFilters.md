@@ -372,12 +372,12 @@ const MyFilterConfig: FiltersConfig = {
             {
                 value: 'between',
                 label: 'resources.posts.filters.operators.between',
-                type: 'mutliple',
+                type: 'multiple',
             },
             {
                 value: 'nbetween',
                 label: 'resources.posts.filters.operators.nbetween',
-                type: 'mutliple',
+                type: 'multiple',
             },
         ],
         input: ({ source }) => <DateRangeInput source={source} />,
@@ -496,7 +496,7 @@ const postListFilters: FiltersConfig = {
                 value: 'between',
                 label: 'Between',
                 input: ({ source }) => <MyNumberRangeInput source={source} />,
-                type: 'mutliple',
+                type: 'multiple',
             },
         ],
         input: ({ source }) => <NumberInput source={source} />,

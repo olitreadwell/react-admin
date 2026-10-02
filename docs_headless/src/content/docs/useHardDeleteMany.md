@@ -68,7 +68,7 @@ const BulkHardDeletePostsButton = () => {
     const [hardDeleteMany, { isPending, error }] = useHardDeleteMany();
     const handleClick = () => {
         hardDeleteMany(
-            { ids: seletedIds }
+            { ids: selectedIds }
         );
     }
     if (error) { return <p>ERROR</p>; }
