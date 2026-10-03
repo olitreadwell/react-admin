@@ -83,7 +83,7 @@ export const PostCreate = () => (
 
 **Tip**: You can include properties in the form `defaultValues` that are not listed as input components, like the `created_at` property in the previous example.
 
-**Tip**: Ra-core also allows to define default values at the input level. See the [Setting default Values](./Form.md#default-values) section.
+**Tip**: Ra-core also allows to define default values at the input level. See the [Setting default Values](./Form.md#defaultvalues) section.
 
 ## `id`
 
