@@ -63,7 +63,7 @@ Ra-core will wrap each call to the `dataProvider.create()` mutation with the `cr
 A middleware function must have the following signature:
 
 ```jsx
-const middlware = async (resource, params, next) => {
+const middleware = async (resource, params, next) => {
     // Do something before the mutation
 
     // Call the next middleware

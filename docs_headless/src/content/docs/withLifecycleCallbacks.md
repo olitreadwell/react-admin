@@ -144,7 +144,7 @@ The second argument is an array of objects that define the callbacks to execute.
 
 A lifecycle callback is an object that defines a resource and callbacks for lifecycle events object. One lifecycle callback object can define callbacks for multiple events. For each event, you can pass a single function, or an array of functions that will be executed in the provided order.
 
-You can also use the wilcard value '*' for the resource to apply the callback to every resource.
+You can also use the wildcard value '*' for the resource to apply the callback to every resource.
 
 Lifecycle callbacks are executed in the order they are defined.
 
