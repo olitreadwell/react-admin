@@ -668,7 +668,7 @@ sort=published_at
 order=DESC
 ```
 
-If you're using a `<DataTable>` inside the List view, then the column headers are buttons allowing users to change the list sort field and order. This feature requires no configuration and works out fo the box. Check [the `<DataTable>` documentation](./DataTable.md#customizing-column-sort) to see how to disable or modify the field used for sorting on a particular column.
+If you're using a `<DataTable>` inside the List view, then the column headers are buttons allowing users to change the list sort field and order. This feature requires no configuration and works out of the box. Check [the `<DataTable>` documentation](./DataTable.md#customizing-column-sort) to see how to disable or modify the field used for sorting on a particular column.
 
 <video controls autoplay playsinline muted loop>
   <source src="./img/sort-column-header.webm" type="video/webm"/>

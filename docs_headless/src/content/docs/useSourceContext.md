@@ -55,7 +55,7 @@ const UserArray = () => (
 
 ## `getSource`
 
-The `getSource` function returns the `name` of a `source` withing a `SourceContext`.
+The `getSource` function returns the `name` of a `source` within a `SourceContext`.
 
 ```tsx
 export function MyCustomInput({ source }: MyCustomInputProps) {
@@ -72,7 +72,7 @@ export type MyCustomInputProps = {
 
 ## `getLabel`
 
-The `getLabel` function returns the `label` of a `source` withing a `SourceContext`.
+The `getLabel` function returns the `label` of a `source` within a `SourceContext`.
 
 ```tsx
 export function MyCustomInput({ source }: MyCustomInputProps) {
