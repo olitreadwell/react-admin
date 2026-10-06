@@ -23,7 +23,7 @@ This field fetches a one-to-one relationship, e.g. the details of a book, when u
 
 `<ReferenceOneFieldBase>` is a headless component, handling only the logic and relying on its `children` or `render` prop  to render the UI.
 
-**Tip**: For a version based on MUI, see [`<ReferenceOneField>`](/ReferenceOneField.html)
+**Tip**: For a version based on MUI, see [`<ReferenceOneField>`](https://marmelab.com/react-admin/ReferenceOneField.html)
 
 **Tip**: For the inverse relationships (the book linked to a book_detail), you can use a [`<ReferenceFieldBase>`](./ReferenceFieldBase.md).
 
