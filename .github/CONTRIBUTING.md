@@ -35,7 +35,7 @@ React-admin is a community project, so pull requests are always welcome, but bef
 
 When in doubt, keep your pull requests small. To give a PR the best chance of getting accepted, don't bundle more than one feature or bug fix per pull request. It's always best to create two smaller PRs than one big one.
 
-The core team prefix their PRs width "[WIP]" (Work in Progress) or "[RFR]" (ready for Review), don't hesitate to do the same to explain how far you are from completion.
+The core team prefix their PRs with "[WIP]" (Work in Progress) or "[RFR]" (ready for Review), don't hesitate to do the same to explain how far you are from completion.
 
 When adding new features or modifying existing, please attempt to include tests to confirm the new behaviour.
 

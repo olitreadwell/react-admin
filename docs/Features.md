@@ -677,7 +677,7 @@ const cities = {
     France: ['Paris', 'Marseille', 'Lyon', 'Toulouse', 'Nice'],
 };
 const toChoices = items => items.map(item => ({ id: item, name: item }));
-// toChoices(coutries) should be [{ id: 'USA', name: 'USA' }, ...]
+// toChoices(countries) should be [{ id: 'USA', name: 'USA' }, ...]
 
 
 const CityInput = () => {

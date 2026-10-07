@@ -375,7 +375,7 @@ describe('useInfiniteGetList', () => {
         expect(
             queryClient.getQueryData(['posts', 'getOne', { id: '2' }])
         ).toEqual({ id: 2, title: 'item 2' });
-        // Check that the getOne Query Cache for item 1 has not been overriden
+        // Check that the getOne Query Cache for item 1 has not been overridden
         expect(
             queryClient.getQueryData(['posts', 'getOne', { id: '1' }])
         ).toEqual({ id: 1, title: 'changed!' });

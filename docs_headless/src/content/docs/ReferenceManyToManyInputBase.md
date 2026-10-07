@@ -57,7 +57,7 @@ Note that although all possible child components support a `defaultValue` prop, 
 
 **Tip**: We don't recommend using `<ReferenceManyToManyInputBase>` in an edition view that has its `mutationMode` set to `undoable`. Indeed, even if users cancel the main mutation, the changes in the associative table will still be applied.
 
-**Tip**: If you need to edit the fields of the associative table (e.g. the `date` in `performances`), you can use a [`<ReferenceManyInputBase>`](#referencemanyinputbase) instead of `<ReferenceManyToManyInputBase>`.
+**Tip**: If you need to edit the fields of the associative table (e.g. the `date` in `performances`), you can use a [`<ReferenceManyInputBase>`](./ReferenceManyInputBase.md) instead of `<ReferenceManyToManyInputBase>`.
 
 ![Screenshot showing the use of ReferenceManyInput instead of ReferenceManyToManyInput](../../img/reference-many-input-band-edit.png)
 

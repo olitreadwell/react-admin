@@ -273,7 +273,7 @@ export const Error = () => (
                         }),
                     getList: (_resource, params) => {
                         return params.filter.q === 'lorem'
-                            ? Promise.reject({ message: 'An error occured' })
+                            ? Promise.reject({ message: 'An error occurred' })
                             : Promise.resolve({
                                   data: authors,
                                   total: authors.length,

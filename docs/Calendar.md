@@ -744,7 +744,7 @@ Full Calendar won't work unless you convert these records to events looking like
 }
 ```
 
-Pass a convertion function as the `convertToEvent` prop of the `<Calendar>` element:
+Pass a conversion function as the `convertToEvent` prop of the `<Calendar>` element:
 
 ```tsx
 import { List } from 'react-admin';
