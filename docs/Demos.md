@@ -43,7 +43,7 @@ If you want to see what react-admin is capable of, or if you want to learn from 
         max-width: 100%;
     }
 
-    .mardown-section > video, .markdown-section, img {
+    .markdown-section > video, .markdown-section, img {
         max-width: 100%;
     }
 

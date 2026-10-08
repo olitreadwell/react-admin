@@ -46,7 +46,7 @@ const CustomToolbar = () => {
             <SaveButton disabled={isLockedByOtherUser} />
             {isLockedByOtherUser && (
                 <LockMessage>
-                    {`This record is locked by another user: ${lock?.dentity}.`}
+                    {`This record is locked by another user: ${lock?.identity}.`}
                 </LockMessage>
             )}
         </Toolbar>

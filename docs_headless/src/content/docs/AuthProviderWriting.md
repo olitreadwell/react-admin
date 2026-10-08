@@ -460,7 +460,7 @@ const authProvider = {
             throw new Error('Failed to handle login callback.');
         }
         // If we did receive the Auth0 parameters,
-        // get an access token based on the query paramaters
+        // get an access token based on the query parameters
         await Auth0Client.handleRedirectCallback();
     },
     ...
@@ -480,7 +480,7 @@ const authProvider = {
             throw new Error('Failed to handle login callback.');
         }
         // If we did receive the Auth0 parameters,
-        // get an access token based on the query paramaters
+        // get an access token based on the query parameters
         await Auth0Client.handleRedirectCallback();
         return { redirectTo: '/posts' };
     },

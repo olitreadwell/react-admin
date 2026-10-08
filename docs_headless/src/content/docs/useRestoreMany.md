@@ -68,7 +68,7 @@ const BulkRestorePostsButton = () => {
     const [restoreMany, { isPending, error }] = useRestoreMany();
     const handleClick = () => {
         restoreMany(
-            { ids: seletedIds }
+            { ids: selectedIds }
         );
     }
     if (error) { return <p>ERROR</p>; }
