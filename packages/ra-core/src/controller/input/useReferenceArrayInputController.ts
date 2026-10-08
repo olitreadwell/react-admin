@@ -151,7 +151,9 @@ export const useReferenceArrayInputController = <
         availableChoices: matchingReferences,
         selectedChoices: finalReferenceRecords,
         displayedFilters: params.displayedFilters,
-        error: errorGetMany || errorGetList,
+        error:
+            errorGetMany ||
+            (finalReferenceRecords.length === 0 ? errorGetList : undefined),
         filter,
         filterValues: params.filterValues,
         hideFilter: paramsModifiers.hideFilter,
