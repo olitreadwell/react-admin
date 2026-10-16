@@ -32,7 +32,7 @@ const MyReactAdmin = () => (
 );
 ```
 
-To trigger the `<MenuLive>` badges, the API has to publish events containing at least the followings keys:
+To trigger the `<MenuLive>` badges, the API has to publish events containing at least the following keys:
 
 ```js
 {

@@ -310,7 +310,7 @@ If your form is narrow, you can set the `fullWidth` prop to `false` to make the 
 </SimpleFormIterator>
 ```
 
-![SimpleFormIterator with iterm label](./img/array-input-item-label.png)
+![SimpleFormIterator with item label](./img/array-input-item-label.png)
 
 ## `inline`
 

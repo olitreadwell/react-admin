@@ -2008,7 +2008,7 @@ describe('<AutocompleteInput />', () => {
         });
     });
 
-    it('should clear the input mutiple tiles with on create set', async () => {
+    it('should clear the input multiple tiles with on create set', async () => {
         render(<OnCreate />);
 
         const input = (await screen.findByLabelText(

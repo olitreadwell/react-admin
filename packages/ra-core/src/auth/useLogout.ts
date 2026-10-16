@@ -105,7 +105,7 @@ const useLogout = (): Logout => {
                         newLocation.search = redirectToParts[1];
                     }
 
-                    // We need to navigate and reset the store after a litte delay to avoid a race condition
+                    // We need to navigate and reset the store after a little delay to avoid a race condition
                     // between the store reset and the navigation.
                     //
                     // This would only happen when the `authProvider.getPermissions` method returns

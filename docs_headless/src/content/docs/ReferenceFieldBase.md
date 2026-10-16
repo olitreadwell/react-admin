@@ -3,7 +3,7 @@ title: "<ReferenceFieldBase>"
 ---
 
 `<ReferenceFieldBase>` is useful for displaying many-to-one and one-to-one relationships, e.g. the details of a user when rendering a post authored by that user.
-`<ReferenceFieldBase>` is a headless component, handling only the logic. This allows to use any UI library for the render. For a version based on MUI see [`<ReferenceField>`](./ReferenceField.md)
+`<ReferenceFieldBase>` is a headless component, handling only the logic. This allows to use any UI library for the render. For a version based on MUI see [`<ReferenceField>`](https://marmelab.com/react-admin/ReferenceField.html)
 
 ## Usage
 

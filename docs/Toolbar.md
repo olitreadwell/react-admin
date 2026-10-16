@@ -87,7 +87,7 @@ const MyToolbar = () => {
 
 ## `sx`: CSS API
 
-You can override the style of the toolbar using the `sx` prop. Use the class names of the inner commponents to tweak their styles:
+You can override the style of the toolbar using the `sx` prop. Use the class names of the inner components to tweak their styles:
 
 | Rule name                      | Description                                                                            |
 |--------------------------------|----------------------------------------------------------------------------------------|
