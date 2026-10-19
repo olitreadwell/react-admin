@@ -175,6 +175,21 @@ export const CancelOnBlur = () => (
     </Wrapper>
 );
 
+export const WithSiblingControl = ({
+    cancelOnBlur,
+}: {
+    cancelOnBlur?: boolean;
+}) => (
+    <Wrapper
+        dataProvider={fakeRestDataProvider({
+            users: [{ id: 1, name: 'John Doe', age: 25, type: 'customer' }],
+        })}
+    >
+        <InPlaceEditor source="name" cancelOnBlur={cancelOnBlur} />
+        <button type="button">Next</button>
+    </Wrapper>
+);
+
 export const MutationMode = () => (
     <Wrapper>
         <InPlaceEditor source="name" mutationMode="optimistic" />
