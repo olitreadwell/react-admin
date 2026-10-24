@@ -1,12 +1,12 @@
 # Store
 
-The Store is react-admin's global, synchronous store. We use it to store state shared between several componenents and/or state that must be persisted across page reloads (e.g. user preferences).
+The Store is react-admin's global, synchronous store. We use it to store state shared between several components and/or state that must be persisted across page reloads (e.g. user preferences).
 
 Here are a few examples of elements stored in the store:
 
 - Is the sidebar open or collapsed?
 - Which rows of a datagrid are selected?
-- What sort rder is applied to a datagrid?
+- What sort order is applied to a datagrid?
 
 ## Architecture
 

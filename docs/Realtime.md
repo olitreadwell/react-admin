@@ -324,7 +324,7 @@ import {
     RaRealTimeTranslationMessages,
 } from '@react-admin/ra-realtime';
 
-/* TranslationMessages extends the defaut translation
+/* TranslationMessages extends the default translation
  * Type from react-admin (BaseTranslationMessages)
  * and the ra-realtime translation Type (RaRealTimeTranslationMessages)
  */

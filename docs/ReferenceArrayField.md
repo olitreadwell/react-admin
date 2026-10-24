@@ -439,7 +439,7 @@ This allows to inline the render logic for the list of related records.
 
 ## `reference`
 
-The resource to fetch for the relateds record.
+The resource to fetch for the related record.
 
 For instance, if the `posts` resource has a `tag_ids` field, set the `reference` to `tags` to fetch the tags related to each post.
 

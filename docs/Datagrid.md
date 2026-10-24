@@ -42,7 +42,7 @@ The `<Datagrid>` is an **iterator** component: it gets an array of records from 
 **Tip**: If you need more Datagrid features, check out these two alternative components:
 
 - [`<EditableDatagrid>`](./EditableDatagrid.md)<img class="icon" src="./img/premium.svg" alt="React Admin Enterprise Edition icon" /> lets users edit the content right in the datagrid
-- [`<DatagridAG>`](./DatagridAG.md)<img class="icon" src="./img/premium.svg" alt="React Admin Enterprise Edition icon" /> adds suport for column reordering, aggregation, pivoting, row grouping, infinite scroll, etc.
+- [`<DatagridAG>`](./DatagridAG.md)<img class="icon" src="./img/premium.svg" alt="React Admin Enterprise Edition icon" /> adds support for column reordering, aggregation, pivoting, row grouping, infinite scroll, etc.
 
 Both are [Enterprise Edition](https://react-admin-ee.marmelab.com) components.
 
@@ -1276,7 +1276,7 @@ export const PostList = () => (
 </video>
 
 
-The column headers are buttons allowing users to change the list sort field and order. This feature requires no configuration and works out fo the box. The next sections explain how you can disable or modify the field used for sorting on a particular column.
+The column headers are buttons allowing users to change the list sort field and order. This feature requires no configuration and works out of the box. The next sections explain how you can disable or modify the field used for sorting on a particular column.
 
 ### Disabling Sorting
 

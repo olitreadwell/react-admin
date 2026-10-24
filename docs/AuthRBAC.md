@@ -385,7 +385,7 @@ Ra-rbac provides alternative components to react-admin base components with RBAC
     - [`<SimpleForm>`](./SimpleForm.md#access-control)
     - [`<TabbedForm>`](./TabbedForm.md#access-control)
 
-In addition, the following components from te Enterprise edition have built-in RBAC support:
+In addition, the following components from the Enterprise edition have built-in RBAC support:
 
 - [`<AccordionForm>`](./AccordionForm.md#access-control)
 - [`<LongForm>`](./LongForm.md#access-control)

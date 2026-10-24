@@ -314,7 +314,7 @@ const App = () => (
 );
 ```
 
-For more advanced sidebar theming, create a new `Sidebar` component overiding the default one with the `sx` prop:
+For more advanced sidebar theming, create a new `Sidebar` component overriding the default one with the `sx` prop:
 
 {% raw %}
 ```jsx

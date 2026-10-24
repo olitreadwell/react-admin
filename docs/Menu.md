@@ -318,7 +318,7 @@ export const theme = {
         RaMenuItemLink: {
             styleOverrides: {
                 root: {
-                    // invisible border when not active, to avoid position flashs
+                    // invisible border when not active, to avoid position flashes
                     borderLeft: '3px solid transparent', 
                     '&.RaMenuItemLink-active': {
                         borderLeft: '10px solid #4f3cc9',
