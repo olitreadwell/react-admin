@@ -202,7 +202,7 @@ const CustomDeletedRecords = () => {
 }
 ```
 
-The `onError` function receives the error from the dataProvider call (`dataProvider.getListDeleted()`), which is a JavaScript Error object (see [the dataProvider documentation for details](./DataProviderWriting.md/#error-format)).
+The `onError` function receives the error from the dataProvider call (`dataProvider.getListDeleted()`), which is a JavaScript Error object (see [the dataProvider documentation for details](./DataProviderWriting.md#error-format)).
 
 ## `resource`
 
@@ -228,7 +228,7 @@ const PessimisticDeletedRecords = () => (
 
 `sort` defines the *default* sort order ; it can still be changed by using the `setSort` function returned by the controller.
 
-For more details on list sort, see the [Sorting The List](./ListTutorial.md/#sorting-the-list) section.
+For more details on list sort, see the [Sorting The List](./ListTutorial.md#sorting-the-list) section.
 
 ## `storeKey`
 
@@ -315,7 +315,7 @@ const {
 
 `useDeletedRecordsListController` requires authentication and will redirect anonymous users to the login page. If you want to allow anonymous access, use the [`disableAuthentication`](#disableauthentication) property.
 
-If your `authProvider` implements [Access Control](./Permissions.md/#access-control), `useDeletedRecordsListController` will only render if the user has the `deleted_records` access on a virtual `ra-soft-delete` resource.
+If your `authProvider` implements [Access Control](./Permissions.md#access-control), `useDeletedRecordsListController` will only render if the user has the `deleted_records` access on a virtual `ra-soft-delete` resource.
 
 For instance, for the `<CustomDeletedRecords>` page below:
 
@@ -344,6 +344,6 @@ const CustomDeletedRecords = () => {
 { resource: 'ra-soft-delete', action: 'list_deleted_records' }
 ```
 
-Users without access will be redirected to the [Access Denied page](./CoreAdmin.md/#accessdenied).
+Users without access will be redirected to the [Access Denied page](./CoreAdmin.md#accessdenied).
 
 Note: Access control is disabled when you use [the disableAuthentication property](#disableauthentication).

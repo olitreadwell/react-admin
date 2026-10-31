@@ -412,7 +412,7 @@ describe('<ReferenceArrayField />', () => {
                 await screen.findByRole('button', { name: 'Select all' })
             ).toBeDefined();
         });
-        it('should not be displayed if all item are manyally selected', async () => {
+        it('should not be displayed if all item are manually selected', async () => {
             render(<WithPagination />);
             await waitFor(() => {
                 expect(screen.queryAllByRole('checkbox')).toHaveLength(6);

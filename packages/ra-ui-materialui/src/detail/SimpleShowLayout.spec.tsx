@@ -11,7 +11,7 @@ import {
 import { TextField } from '../field';
 
 describe('<SimpleShowLayout />', () => {
-    it('should display children filelds', () => {
+    it('should display children fields', () => {
         render(
             <RecordContextProvider value={{ source1: 'foo', source2: 'bar' }}>
                 <SimpleShowLayout>

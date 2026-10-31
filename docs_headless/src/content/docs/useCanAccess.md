@@ -107,7 +107,7 @@ For instance, here's how you can protect a [custom route](./CustomRoutes.md) for
 ```tsx
 import { useRequireAccess } from 'ra-core';
 
-export export const SettingsPage = () => {
+export const SettingsPage = () => {
     const { isPending } = useRequireAccess({
         action: 'edit',
         resource: 'settings',

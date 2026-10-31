@@ -130,7 +130,7 @@ const { data } = useInfiniteGetList(
 );
 ```
 
-Use the `meta` parameter to pass custom metadata to the data provider. For instance, if the backend suports embedding related records, you can pass the `_embed` parameter to retrieve them.
+Use the `meta` parameter to pass custom metadata to the data provider. For instance, if the backend supports embedding related records, you can pass the `_embed` parameter to retrieve them.
 
 ```jsx
 const { data } = useInfiniteGetList(
