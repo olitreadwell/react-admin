@@ -113,9 +113,9 @@ You don't need to define the app location for CRUD pages as react-admin does it 
 
 However, you can customize these default app locations in your CRUD pages, and you must [define the location for custom pages](#adding-custom-pages).
 
-To leverage the provided components such as the [`<Breadcrumb>`](#breadcrumb) or [`<MultiLevelMenu>`](./MultiLevelMenu), the layout must be wrapped with `<AppLocationContext>`.
+To leverage the provided components such as the [`<Breadcrumb>`](#breadcrumb) or [`<MultiLevelMenu>`](./MultiLevelMenu.md), the layout must be wrapped with `<AppLocationContext>`.
 
-Layout components from `ra-navigation` ([`<ContainerLayout>`](./ContainerLayout) or [`<SolarLayout>`](./SolarLayout)) already include that context, so you can skip that step if you are using one of these layouts.
+Layout components from `ra-navigation` ([`<ContainerLayout>`](./ContainerLayout.md) or [`<SolarLayout>`](./SolarLayout.md)) already include that context, so you can skip that step if you are using one of these layouts.
 
 If, however, you are using the default `<Layout>` component from `react-admin`, or a custom layout, you must wrap it with `<AppLocationContext>`:
 

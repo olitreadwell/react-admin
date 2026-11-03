@@ -421,6 +421,6 @@ const PostList = () => (
 { action: "list", resource: "posts" }
 ```
 
-Users without access will be redirected to the [Access Denied page](./Admin.md#accessdenied).
+Users without access will be redirected to the [Access Denied page](./CoreAdmin.md#accessdenied).
 
 **Note**: Access control is disabled when you use [the `disableAuthentication` prop](./ListBase.md#disableauthentication).

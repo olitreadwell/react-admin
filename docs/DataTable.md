@@ -1389,7 +1389,7 @@ const PostList = () => (
 );
 ```
 
-If you include a [`<ColumnsButton>`](./ColumnsButton.md) in a page that has more than one `<DataTable>`, you have to link the two components by giving them the same `storeKey`:
+If you include a [`<ColumnsButton>`](#hiding-or-reordering-columns) in a page that has more than one `<DataTable>`, you have to link the two components by giving them the same `storeKey`:
 
 ```tsx
 const PostListActions = () => (

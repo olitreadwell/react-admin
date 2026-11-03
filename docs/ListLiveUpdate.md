@@ -27,7 +27,7 @@ const PostList = () => (
 );
 ```
 
-To trigger refreshes of `<ListLiveUpdate>`, the API has to publish events containing at least the followings:
+To trigger refreshes of `<ListLiveUpdate>`, the API has to publish events containing at least the following:
 
 ```js
 {

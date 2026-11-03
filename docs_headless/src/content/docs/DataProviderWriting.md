@@ -439,7 +439,7 @@ export default {
 
 ## Handling Authentication
 
-Your API probably requires some form of authentication (e.g. a token in the `Authorization` header). It's the responsibility of [the `authProvider`](./Authentication.md) to log the user in and obtain the authentication data. Ra-core doesn't provide any particular way of communicating this authentication data to the Data Provider. Most of the time, storing the authentication data in the  `localStorage` is the best choice - and allows uses to open multiple tabs without having to log in again.
+Your API probably requires some form of authentication (e.g. a token in the `Authorization` header). It's the responsibility of [the `authProvider`](./Authentication.md) to log the user in and obtain the authentication data. Ra-core doesn't provide any particular way of communicating this authentication data to the Data Provider. Most of the time, storing the authentication data in the  `localStorage` is the best choice - and allows users to open multiple tabs without having to log in again.
 
 Check the [Handling Authentication](./DataProviders.md#handling-authentication) section in the Data Providers introduction for an example of such a setup.
 

@@ -63,7 +63,7 @@ const ListActions = () => (
 
 ## `preferenceKey`
 
-If you include `<SelectColumnsButton>` in a page that has more than one `<DatagridConfigurable>` (e.g. in a dasboard), you have to link the two components by giving them the same `preferenceKey`:
+If you include `<SelectColumnsButton>` in a page that has more than one `<DatagridConfigurable>` (e.g. in a dashboard), you have to link the two components by giving them the same `preferenceKey`:
 
 ```jsx
 const BookList = () => {

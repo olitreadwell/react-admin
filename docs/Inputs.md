@@ -708,7 +708,7 @@ const PostEdit = () => (
 
 **Tip:** TypeScript users will notice that `scopedFormData` is typed as an optional parameter. This is because the `<FormDataConsumer>` component can be used outside of an `<ArrayInput>` and in that case, this parameter will be `undefined`. If you are inside an `<ArrayInput>`, you can safely assume that this parameter will be defined.
 
-**Tip:** If you need to access the *effective* source of an input inside an `<ArrayInput>`, for example to change the value programmatically using `setValue`, you will need to leverage the [`useSourceContext` hook](./ArrayInput#changing-an-items-value-programmatically).
+**Tip:** If you need to access the *effective* source of an input inside an `<ArrayInput>`, for example to change the value programmatically using `setValue`, you will need to leverage the [`useSourceContext` hook](./ArrayInput.md#changing-an-items-value-programmatically).
 
 ## Hiding Inputs Based On Other Inputs
 

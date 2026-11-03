@@ -348,7 +348,7 @@ By default, `<TabbedForm>` renders a toolbar at the bottom of the form, containi
 - a submit button on Creation pages,
 - a submit button and a delete button on Edition pages.
 
-If you want to tweak the look and feel of that toolbar, add or remove buttons, pass yout own toolbar component to the form using the `toolbar` prop.
+If you want to tweak the look and feel of that toolbar, add or remove buttons, pass your own toolbar component to the form using the `toolbar` prop.
 
 ```jsx
 const PostCreate = () => (
@@ -687,7 +687,7 @@ const formState = useFormState(); // ❌ should deconstruct the formState
 
 ![dynamic tab label](./img/FormTab-dynamic-label.png)
 
-To achieve that, create a custom commponent that renders a `<TabbedForm.Tab>` with a dynamic `label`:
+To achieve that, create a custom component that renders a `<TabbedForm.Tab>` with a dynamic `label`:
 
 ```jsx
 const ReviewsFormTab = props => {

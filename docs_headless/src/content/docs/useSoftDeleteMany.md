@@ -72,7 +72,7 @@ const BulkSoftDeletePostsButton = () => {
     const handleClick = () => {
         softDeleteMany(
             'posts',
-            { ids: seletedIds }
+            { ids: selectedIds }
         );
     }
     if (error) { return <p>ERROR</p>; }
