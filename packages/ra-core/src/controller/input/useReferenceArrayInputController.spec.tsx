@@ -147,7 +147,7 @@ describe('useReferenceArrayInputController', () => {
             });
         });
 
-        it.skip('should not display an error in case of references fetch error but data from at least one selected reference was found', async () => {
+        it('should not display an error in case of references fetch error but data from at least one selected reference was found', async () => {
             const children = jest.fn(({ error }) => (
                 <div>{error?.message}</div>
             ));
@@ -162,7 +162,10 @@ describe('useReferenceArrayInputController', () => {
                             } satisfies GetManyResult<RaRecord> as any),
                     })}
                 >
-                    <Form onSubmit={jest.fn()}>
+                    <Form
+                        onSubmit={jest.fn()}
+                        defaultValues={{ tag_ids: [1, 2] }}
+                    >
                         <ReferenceArrayInputController
                             {...defaultProps}
                             field={{ value: [1, 2] }}
